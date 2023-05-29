@@ -19,8 +19,8 @@ This is a solution to the [3-column preview card component challenge on Frontend
 
 ### Links
 
-- Solution URL: [Open in New Tab (Ctrl + click)](https://your-solution-url.com)
-- Live Site URL: [Open in New Tab (Ctrl + click)](https://jozef-capanda.github.io/)
+- Solution URL: [Open in New Tab (Ctrl + click)](https://www.frontendmentor.io/solutions/3column-preview-card-component-using-flexwrap-uIMoeXEBvW)
+- Live Site URL: [Open in New Tab (Ctrl + click)](https://jozef-capanda.github.io/Frontend-Mentor-3-column-preview/)
 
 ## My process
 
