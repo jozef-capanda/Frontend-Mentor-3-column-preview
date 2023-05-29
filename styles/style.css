@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  --heading: "Big Shoulders Display", cursive;
+  --text: "Lexend Deca", sans-serif;
+
+  /* colors */
+  --orange: #e38826;
+  --green-200: #006970;
+  --green-400: #004241;
+
+  /* paragraphs */
+  --neutral-1: #ffffffbf;
+  /* background, headings, buttons */
+  --neutral-2: #f2f2f2;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--neutral-2);
+  max-width: 90rem;
+  margin: 0 auto;
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  padding: 3rem 1.25rem;
+  position: relative;
+}
+
+h2 {
+  font-family: var(--heading);
+  font-weight: 700;
+}
+
+p {
+  color: var(--neutral-1);
+  font-size: 0.9375rem;
+  font-family: var(--text);
+  font-weight: 400;
+  line-height: 1.65;
+}
+
+.container {
+  max-width: 57.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 0.625rem;
+  overflow: hidden;
+}
+
+.card {
+  max-width: 19rem;
+  height: 31.2rem;
+  padding: 2.8rem 3.2rem 2.4rem 2.7rem;
+}
+
+.card p {
+  margin-bottom: 5.1rem;
+  text-align: left;
+}
+
+.card h2 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: var(--neutral-2);
+  margin-bottom: 1.5rem;
+}
+
+.bg-orange {
+  background-color: var(--orange);
+}
+.bg-green-200 {
+  background-color: var(--green-200);
+}
+.bg-green-400 {
+  background-color: var(--green-400);
+}
+
+.icon {
+  width: 3.9rem;
+  height: 2.5rem;
+  margin-bottom: 2.6rem;
+}
+
+.link {
+  font-size: 0.95rem;
+  font-family: var(--text);
+  text-align: center;
+  background-color: var(--neutral-2);
+  width: 9rem;
+  padding: 0.9rem 0;
+  border-radius: 2.5rem;
+  text-decoration: none;
+  display: inline-block;
+  border: 2px solid;
+  transition: all 0.25s;
+}
+
+.link-orange {
+  color: var(--orange);
+}
+.link-green-200 {
+  color: var(--green-200);
+}
+.link-green-400 {
+  color: var(--green-400);
+}
+
+.link-orange:hover,
+.link-green-200:hover,
+.link-green-400:hover {
+  border-color: var(--neutral-2);
+  color: var(--neutral-2);
+}
+
+.link-orange:hover {
+  background-color: var(--orange);
+}
+
+.link-green-200:hover {
+  background-color: var(--green-200);
+}
+
+.link-green-400:hover {
+  background-color: var(--green-400);
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.attribution {
+  font-size: 1rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+
+@media screen and (max-width: 957px) {
+  .card:first-child {
+    border-top-left-radius: 0.625rem;
+    border-bottom-left-radius: 0.625rem;
+  }
+  .card:nth-child(2) {
+    border-top-right-radius: 0.625rem;
+    border-bottom-right-radius: 0.625rem;
+  }
+  .card:last-child {
+    border-bottom-left-radius: 0.625rem;
+    border-bottom-right-radius: 0.625rem;
+  }
+}
+
+@media screen and (max-width: 651px) {
+  .card:first-child {
+    border-top-left-radius: 0.625rem;
+    border-top-right-radius: 0.625rem;
+    border-bottom-left-radius: 0;
+  }
+  .card:nth-child(2) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .card:last-child {
+    border-bottom-left-radius: 0.625rem;
+    border-bottom-right-radius: 0.625rem;
+  }
+  .card {
+    height: 28rem;
+  }
+  .card p {
+    margin-bottom: 1.875rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .line-break::after {
+    content: "\a";
+    white-space: pre;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  .card {
+    height: auto;
+  }
+}
